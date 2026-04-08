@@ -1,128 +1,984 @@
 {
-    "buildingName": "NEXUS TOWER1",
-    "subtitle": "SILICON COMMAND",
-    "totalFloors": 50,
-    "rooftop": {
-        "label": "CORE_ROOT",
-        "description": "Central command nexus"
+  "buildingName": "OBSIDIAN CAPITAL TOWER",
+  "subtitle": "AI INVESTMENT COMMAND",
+  "totalFloors": 50,
+  "rooftop": {
+    "label": "ALLOCATION_CORE",
+    "description": "Strategic mandate intake and final override control"
+  },
+  "floors": [
+    {
+      "range": [50, 50],
+      "name": "ALLOCATION_CORE",
+      "short": "CORE",
+      "description": "Strategic mandate intake, final override control, and capital allocation framing hub"
     },
-    "floors": [
-        {
-            "range": [
-                50,
-                50
-            ],
-            "name": "CORE_ROOT",
-            "short": "CORE_ROOT",
-            "description": "Central command nexus"
-        },
-        {
-            "range": [
-                48,
-                49
-            ],
-            "name": "EXECUTIVE_ARRAY",
-            "short": "EXEC_ARRAY",
-            "description": "Executive decision matrix"
-        },
-        {
-            "range": [
-                45,
-                47
-            ],
-            "name": "C_SUITE_CLUSTER",
-            "short": "C_SUITE",
-            "description": "C-level strategy cluster"
-        },
-        {
-            "range": [
-                40,
-                44
-            ],
-            "name": "SENIOR_MGMT_BUS",
-            "short": "SENIOR_BUS",
-            "description": "Senior management data bus"
-        },
-        {
-            "range": [
-                35,
-                39
-            ],
-            "name": "RD_COMPUTE_POOL",
-            "short": "RD_POOL",
-            "description": "R&D compute resource pool"
-        },
-        {
-            "range": [
-                30,
-                34
-            ],
-            "name": "ENGINEERING_OPS",
-            "short": "ENG_OPS",
-            "description": "Engineering operations center"
-        },
-        {
-            "range": [
-                25,
-                29
-            ],
-            "name": "DESIGN_PIPELINE",
-            "short": "DESIGN",
-            "description": "Design rendering pipeline"
-        },
-        {
-            "range": [
-                20,
-                24
-            ],
-            "name": "MARKETING_GRID",
-            "short": "MKT_GRID",
-            "description": "Marketing signal grid"
-        },
-        {
-            "range": [
-                15,
-                19
-            ],
-            "name": "SALES_OPS",
-            "short": "SALES_OPS",
-            "description": "Sales operations matrix"
-        },
-        {
-            "range": [
-                10,
-                14
-            ],
-            "name": "FINANCE_LEDGER",
-            "short": "FIN_LEDGER",
-            "description": "Finance distributed ledger"
-        },
-        {
-            "range": [
-                5,
-                9
-            ],
-            "name": "HR_DAEMON",
-            "short": "HR_DAEMON",
-            "description": "Human resources daemon"
-        },
-        {
-            "range": [
-                2,
-                4
-            ],
-            "name": "GENERAL_COMPUTE",
-            "short": "GEN_COMPUTE",
-            "description": "General compute nodes"
-        },
-        {
-            "range": [
-                1,
-                1
-            ],
-            "name": "INIT_LOBBY",
-            "short": "INIT_LOBBY",
-            "description": "Initialization lobby"
-        }
-    ]
+    {
+      "range": [48, 49],
+      "name": "INVESTMENT_COMMITTEE",
+      "short": "IC",
+      "description": "Committee chambers, voting desks, memo review queue, and approval broadcast layer"
+    },
+    {
+      "range": [45, 47],
+      "name": "CIO_CRO_CLUSTER",
+      "short": "CIO_CRO",
+      "description": "Strategy and risk leadership cluster for mandate shaping, limit setting, and escalation handling"
+    },
+    {
+      "range": [40, 44],
+      "name": "PORTFOLIO_MGMT_BUS",
+      "short": "PM_BUS",
+      "description": "Portfolio routing bus where capital tasks are split into mandates, sizing tracks, and execution queues"
+    },
+    {
+      "range": [35, 39],
+      "name": "RESEARCH_SYNTHESIS",
+      "short": "RESEARCH",
+      "description": "Sector pods, single-name analysts, valuation desks, and catalyst synthesis cells"
+    },
+    {
+      "range": [30, 34],
+      "name": "RISK_COMPLIANCE_GRID",
+      "short": "RISK_GRID",
+      "description": "Risk engines, compliance desks, evidence archive, and exception review queues"
+    },
+    {
+      "range": [25, 29],
+      "name": "EXECUTION_PLANNING",
+      "short": "EXEC",
+      "description": "Trade routing, tranche scheduling, liquidity windows, and execution guardrail desks"
+    },
+    {
+      "range": [20, 24],
+      "name": "MARKET_SIGNAL_DECK",
+      "short": "SIGNALS",
+      "description": "Historical market evidence deck with benchmark monitors, volume panels, and capital flow scanners"
+    },
+    {
+      "range": [15, 19],
+      "name": "REPORTING_ATTRIBUTION",
+      "short": "REPORTS",
+      "description": "Attribution pods, PM reporting surfaces, investor memo desks, and dashboard aggregation layer"
+    },
+    {
+      "range": [10, 14],
+      "name": "FINANCE_OPERATIONS",
+      "short": "FIN_OPS",
+      "description": "Ledger, booking, settlement, control logs, and post-trade operations coordination"
+    },
+    {
+      "range": [5, 9],
+      "name": "WORKFORCE_SUPPORT",
+      "short": "OPS",
+      "description": "Workflow coordination desks, staffing relays, scheduling queues, and internal support services"
+    },
+    {
+      "range": [2, 4],
+      "name": "GENERAL_COMPUTE",
+      "short": "GEN",
+      "description": "Shared compute nodes, background calculations, refresh jobs, and rendering support"
+    },
+    {
+      "range": [1, 1],
+      "name": "INIT_LOBBY",
+      "short": "LOBBY",
+      "description": "Task intake lobby, building boot sequence, and scenario initialization entrypoint"
+    }
+  ],
+  "sceneId": "ai-allocation-command-v2",
+  "task": {
+    "id": "task-ai-infra-001",
+    "title": "AI 基础设施主题增配",
+    "capital": {
+      "amount": 10000000,
+      "currency": "CNY"
+    },
+    "objective": "在控制科技集中度和组合回撤的前提下，提高成长暴露并建立 AI 基础设施主题仓位。",
+    "question": "是否对 AI 算力链核心标的进行战术性增配？",
+    "status": "in_review",
+    "priority": "high",
+    "owner": "PORTFOLIO_MGMT_BUS",
+    "constraints": [
+      "单仓位不超过 4.5%",
+      "科技行业暴露不超过 28%",
+      "限制名单不得命中",
+      "执行分三笔推进"
+    ],
+    "headline": {
+      "topic": "AI 算力链增配",
+      "symbol": "NVDA / AI 基础设施",
+      "action": "分三笔建仓",
+      "targetRange": "1120 - 1260",
+      "riskRating": "中高",
+      "committeeVerdict": "有条件通过"
+    }
+  },
+  "renderHints": {
+    "layout": "single-central-tower",
+    "emphasis": [
+      "hierarchy clarity",
+      "dense band occupancy",
+      "report density",
+      "financial institution atmosphere",
+      "top-to-bottom task flow"
+    ],
+    "uiReference": "/nfs/home/zhangyuxin/router/opentower_v2",
+    "schemaReference": "/nfs/home/zhangyuxin/router/floors.json"
+  },
+  "bandBindings": [
+    {
+      "floorName": "ALLOCATION_CORE",
+      "bandLabel": "战略中枢",
+      "state": "active",
+      "occupancy": { "staff": 6, "activeDesks": 4, "queueDepth": 1, "utilization": "67%" },
+      "summary": "战略层接收季度配置请求，定义资金任务、风险边界和最终否决权。",
+      "cells": [
+        "配置指令台",
+        "风险口径席",
+        "主题优先级台",
+        "最终拍板席"
+      ],
+      "activePackets": [
+        "资本任务主包",
+        "季度增长暴露目标"
+      ],
+      "bandSignals": [
+        "战略指令已加载",
+        "总资金 1000 万 CNY",
+        "目标：提高成长暴露"
+      ],
+      "reportRefs": ["capital-flow", "committee-vote-matrix"]
+    },
+    {
+      "floorName": "INVESTMENT_COMMITTEE",
+      "bandLabel": "投委会审议层",
+      "state": "review",
+      "occupancy": { "staff": 14, "activeDesks": 9, "queueDepth": 3, "utilization": "79%" },
+      "summary": "多层会议室、投票席、摘要审阅位和秘书席并行处理最终审议。",
+      "cells": [
+        "委员会主席席",
+        "投票席",
+        "材料审阅台",
+        "会签记录席"
+      ],
+      "activePackets": [
+        "研究摘要包",
+        "风险约束单",
+        "执行草案"
+      ],
+      "bandSignals": [
+        "终审中",
+        "1 项条件待补",
+        "会签记录同步中"
+      ],
+      "reportRefs": ["approval-chain", "committee-vote-matrix", "blocker-list"]
+    },
+    {
+      "floorName": "CIO_CRO_CLUSTER",
+      "bandLabel": "高管决策带",
+      "state": "active",
+      "occupancy": { "staff": 10, "activeDesks": 7, "queueDepth": 2, "utilization": "70%" },
+      "summary": "CIO/CRO 不只是一人一席，而是围绕其展开的策略、风险、压力测试与升级处理带。",
+      "cells": [
+        "投资逻辑席",
+        "风险预算席",
+        "压力测试台",
+        "升级处理队列"
+      ],
+      "activePackets": [
+        "主题判断更新",
+        "集中度约束包"
+      ],
+      "bandSignals": [
+        "科技暴露上限压到 28%",
+        "单仓位上限 4.5%",
+        "允许进入正式拆解"
+      ],
+      "reportRefs": ["risk-summary", "drawdown-window"]
+    },
+    {
+      "floorName": "PORTFOLIO_MGMT_BUS",
+      "bandLabel": "组合路由总线",
+      "state": "active",
+      "occupancy": { "staff": 18, "activeDesks": 13, "queueDepth": 4, "utilization": "72%" },
+      "summary": "组合管理层把总任务拆成主题、仓位、约束、审批和执行几个并行工单。",
+      "cells": [
+        "任务拆解台",
+        "仓位分配席",
+        "组合优化席",
+        "约束同步席",
+        "审批路由台"
+      ],
+      "activePackets": [
+        "主题拆解工单",
+        "仓位框架",
+        "执行排程单"
+      ],
+      "bandSignals": [
+        "任务已拆成 4 条工作流",
+        "组合约束同步完成",
+        "等待研究摘要回流"
+      ],
+      "reportRefs": ["position-allocation", "sector-exposure", "concentration-ladder"]
+    },
+    {
+      "floorName": "RESEARCH_SYNTHESIS",
+      "bandLabel": "研究综合层",
+      "state": "active",
+      "occupancy": { "staff": 28, "activeDesks": 21, "queueDepth": 6, "utilization": "75%" },
+      "summary": "行业、个股、估值、催化剂四类桌组并行产出 thesis，不是一个“研究部门”卡片。",
+      "cells": [
+        "行业研究组",
+        "个股研究组",
+        "估值台",
+        "催化剂台",
+        "纪要整理席"
+      ],
+      "activePackets": [
+        "GPU 产业链摘要",
+        "NVDA 个股 thesis",
+        "估值区间 1120-1260"
+      ],
+      "bandSignals": [
+        "研究完成度 88%",
+        "主标的已锁定 NVDA",
+        "催化剂列表已整理"
+      ],
+      "reportRefs": ["thesis-scorecard", "valuation-bridge", "historical-price-trend"]
+    },
+    {
+      "floorName": "RISK_COMPLIANCE_GRID",
+      "bandLabel": "风控合规网格",
+      "state": "warning",
+      "occupancy": { "staff": 24, "activeDesks": 17, "queueDepth": 5, "utilization": "71%" },
+      "summary": "风险引擎、限制名单核验、证据留痕、异常升级几条线同时运行。",
+      "cells": [
+        "暴露校验台",
+        "限制名单核验席",
+        "证据留痕台",
+        "异常队列",
+        "合规会签席"
+      ],
+      "activePackets": [
+        "科技暴露检查",
+        "单仓位校验",
+        "材料留痕核验"
+      ],
+      "bandSignals": [
+        "科技暴露 27.8% / 28% 内控线",
+        "限制名单未命中",
+        "1 条短期波动说明待补"
+      ],
+      "reportRefs": ["risk-summary", "compliance-checklist", "evidence-completeness", "drawdown-window"]
+    },
+    {
+      "floorName": "EXECUTION_PLANNING",
+      "bandLabel": "执行规划层",
+      "state": "ready",
+      "occupancy": { "staff": 16, "activeDesks": 11, "queueDepth": 3, "utilization": "69%" },
+      "summary": "交易路由、分笔计划、滑点边界、暂停条件和窗口管理协同生成执行方案。",
+      "cells": [
+        "分笔排程席",
+        "流动性窗口台",
+        "滑点控制席",
+        "异常暂停席"
+      ],
+      "activePackets": [
+        "三段式建仓单",
+        "流动性窗口计划",
+        "暂停条件卡"
+      ],
+      "bandSignals": [
+        "30/40/30 三段推进",
+        "尾盘保留修正余量",
+        "执行预案已就绪"
+      ],
+      "reportRefs": ["execution-plan", "liquidity-window", "slippage-guardrail"]
+    },
+    {
+      "floorName": "MARKET_SIGNAL_DECK",
+      "bandLabel": "市场信号甲板",
+      "state": "active",
+      "occupancy": { "staff": 20, "activeDesks": 14, "queueDepth": 4, "utilization": "70%" },
+      "summary": "价格、基准、成交量、资金偏好四类看板共同给场景提供历史市场依据。",
+      "cells": [
+        "价格趋势屏",
+        "基准对比屏",
+        "成交量席",
+        "资金偏好席"
+      ],
+      "activePackets": [
+        "价格序列刷新",
+        "相对收益对比",
+        "量能变化摘要"
+      ],
+      "bandSignals": [
+        "历史趋势向上",
+        "相对基准持续超额",
+        "周五量能最高"
+      ],
+      "reportRefs": ["historical-price-trend", "benchmark-comparison", "turnover-volume", "capital-flow"]
+    },
+    {
+      "floorName": "REPORTING_ATTRIBUTION",
+      "bandLabel": "报表归因层",
+      "state": "active",
+      "occupancy": { "staff": 26, "activeDesks": 20, "queueDepth": 6, "utilization": "77%" },
+      "summary": "归因、投资者材料、PM 摘要和审批纪要被聚合成报表墙，不再只是单一“报表层”。",
+      "cells": [
+        "收益归因台",
+        "投资者摘要席",
+        "审批纪要席",
+        "组合快照屏",
+        "报表聚合总线"
+      ],
+      "activePackets": [
+        "收益归因摘要",
+        "仓位分布快照",
+        "审批链结论卡"
+      ],
+      "bandSignals": [
+        "报表墙已聚合 16 张卡",
+        "审批纪要已同步",
+        "投资者摘要待导出"
+      ],
+      "reportRefs": ["position-allocation", "attribution-summary", "approval-chain", "cash-buffer", "capital-flow"]
+    },
+    {
+      "floorName": "FINANCE_OPERATIONS",
+      "bandLabel": "财务运营层",
+      "state": "idle",
+      "occupancy": { "staff": 12, "activeDesks": 6, "queueDepth": 2, "utilization": "50%" },
+      "summary": "台账、清算、审计留痕、内部对账在执行落地前保持待命。",
+      "cells": [
+        "台账席",
+        "清算席",
+        "对账台",
+        "审计留痕席"
+      ],
+      "activePackets": [
+        "待成交台账",
+        "结算初始化单"
+      ],
+      "bandSignals": [
+        "台账已准备",
+        "清算等待成交后更新"
+      ],
+      "reportRefs": ["operations-status", "settlement-readiness"]
+    },
+    {
+      "floorName": "WORKFORCE_SUPPORT",
+      "bandLabel": "支持调度层",
+      "state": "idle",
+      "occupancy": { "staff": 15, "activeDesks": 7, "queueDepth": 3, "utilization": "47%" },
+      "summary": "任务协调、排班和跨层消息转发为整栋楼提供持续运转感。",
+      "cells": [
+        "排班席",
+        "消息中继台",
+        "任务队列席"
+      ],
+      "activePackets": [
+        "任务队列同步",
+        "跨层通知广播"
+      ],
+      "bandSignals": [
+        "2 条后台队列待处理",
+        "跨层同步正常"
+      ],
+      "reportRefs": ["ops-queue-status"]
+    },
+    {
+      "floorName": "GENERAL_COMPUTE",
+      "bandLabel": "通用算力层",
+      "state": "idle",
+      "occupancy": { "staff": 8, "activeDesks": 4, "queueDepth": 2, "utilization": "50%" },
+      "summary": "后台刷新任务、报表计算和页面支撑节点持续运行。",
+      "cells": [
+        "计算节点",
+        "刷新任务列",
+        "可视化支撑席"
+      ],
+      "activePackets": [
+        "报表刷新",
+        "指标重算"
+      ],
+      "bandSignals": [
+        "后台刷新正常",
+        "无异常告警"
+      ],
+      "reportRefs": ["compute-health"]
+    },
+    {
+      "floorName": "INIT_LOBBY",
+      "bandLabel": "入口大厅",
+      "state": "active",
+      "occupancy": { "staff": 9, "activeDesks": 5, "queueDepth": 1, "utilization": "56%" },
+      "summary": "入口层负责场景启动、任务挂载、公司名片和任务总览。",
+      "cells": [
+        "场景入口台",
+        "主任务挂载席",
+        "公司名片屏"
+      ],
+      "activePackets": [
+        "页面初始化",
+        "任务入口说明"
+      ],
+      "bandSignals": [
+        "场景已就绪",
+        "主任务已加载"
+      ],
+      "reportRefs": ["task-summary"]
+    }
+  ],
+  "taskFlow": [
+    {
+      "step": 1,
+      "from": "ALLOCATION_CORE",
+      "to": "INVESTMENT_COMMITTEE",
+      "title": "战略层下发配置任务",
+      "message": "提高成长暴露，但必须在风险预算内完成。"
+    },
+    {
+      "step": 2,
+      "from": "INVESTMENT_COMMITTEE",
+      "to": "CIO_CRO_CLUSTER",
+      "title": "投委会要求统一投资口径",
+      "message": "明确主题、仓位边界和主要否决条件。"
+    },
+    {
+      "step": 3,
+      "from": "CIO_CRO_CLUSTER",
+      "to": "PORTFOLIO_MGMT_BUS",
+      "title": "高管层下发任务包",
+      "message": "拆成研究、风控、合规和执行四条工作流。"
+    },
+    {
+      "step": 4,
+      "from": "PORTFOLIO_MGMT_BUS",
+      "to": "RESEARCH_SYNTHESIS",
+      "title": "组合层转交研究综合层",
+      "message": "请给出主题逻辑、主标的、估值区间和催化剂。"
+    },
+    {
+      "step": 5,
+      "from": "RESEARCH_SYNTHESIS",
+      "to": "RISK_COMPLIANCE_GRID",
+      "title": "研究摘要回流风控合规",
+      "message": "NVDA 作为主标的，建议 4.5% 上限，估值区间 1120-1260。"
+    },
+    {
+      "step": 6,
+      "from": "RISK_COMPLIANCE_GRID",
+      "to": "EXECUTION_PLANNING",
+      "title": "风险与合规给出放行条件",
+      "message": "限制名单通过，但科技暴露不得超过 28%，单仓位不得超 4.5%。"
+    },
+    {
+      "step": 7,
+      "from": "EXECUTION_PLANNING",
+      "to": "REPORTING_ATTRIBUTION",
+      "title": "执行层提交分笔方案",
+      "message": "按三笔推进并同步滑点控制、流动性窗口和暂停条件。"
+    }
+  ],
+  "activityFeed": [
+    {
+      "time": "09:05",
+      "floor": "ALLOCATION_CORE",
+      "role": "首席投资官办公室",
+      "category": "task_intake",
+      "severity": "info",
+      "tag": "任务挂载",
+      "text": "季度增长暴露调整任务已挂入顶层配置队列，总资金 1000 万 CNY。"
+    },
+    {
+      "time": "09:10",
+      "floor": "PORTFOLIO_MGMT_BUS",
+      "role": "组合管理负责人",
+      "category": "task_split",
+      "severity": "info",
+      "tag": "任务分发",
+      "text": "已将 AI 基础设施增配任务拆解并下发到研究、风控、合规与执行链路。"
+    },
+    {
+      "time": "09:18",
+      "floor": "RESEARCH_SYNTHESIS",
+      "role": "行业研究组",
+      "category": "thesis_update",
+      "severity": "info",
+      "tag": "行业更新",
+      "text": "GPU、服务器、光模块和电力链共振增强，主题判断进入摘要汇总阶段。"
+    },
+    {
+      "time": "09:32",
+      "floor": "RESEARCH_SYNTHESIS",
+      "role": "估值台",
+      "category": "valuation_update",
+      "severity": "info",
+      "tag": "估值回传",
+      "text": "NVDA 目标区间整理为 1120-1260，估值桥已同步给风险层。"
+    },
+    {
+      "time": "09:45",
+      "floor": "MARKET_SIGNAL_DECK",
+      "role": "市场情报席",
+      "category": "market_refresh",
+      "severity": "info",
+      "tag": "市场刷新",
+      "text": "历史趋势、基准对比和量能面板已刷新，主题相对强度继续领先。"
+    },
+    {
+      "time": "10:02",
+      "floor": "RISK_COMPLIANCE_GRID",
+      "role": "暴露校验台",
+      "category": "risk_breach_check",
+      "severity": "warning",
+      "tag": "暴露扫描",
+      "text": "科技暴露临近内控线，建议把总暴露压在 28% 以下后再推进。"
+    },
+    {
+      "time": "10:11",
+      "floor": "RISK_COMPLIANCE_GRID",
+      "role": "限制名单核验席",
+      "category": "compliance_evidence",
+      "severity": "approved",
+      "tag": "核验通过",
+      "text": "限制名单未命中，外部资料引用和审批留痕记录完整。"
+    },
+    {
+      "time": "10:26",
+      "floor": "CIO_CRO_CLUSTER",
+      "role": "首席风控官办公室",
+      "category": "risk_policy",
+      "severity": "review",
+      "tag": "风险口径",
+      "text": "确认单仓位上限 4.5%，要求补充短期波动容忍区间说明。"
+    },
+    {
+      "time": "10:44",
+      "floor": "EXECUTION_PLANNING",
+      "role": "分笔排程席",
+      "category": "execution_route",
+      "severity": "info",
+      "tag": "执行预案",
+      "text": "三段式建仓方案已生成，阶段比例为 30% / 40% / 30%。"
+    },
+    {
+      "time": "11:05",
+      "floor": "EXECUTION_PLANNING",
+      "role": "流动性窗口台",
+      "category": "liquidity_check",
+      "severity": "info",
+      "tag": "窗口评估",
+      "text": "午后确认窗口流动性优于开盘阶段，尾盘保留修正余量。"
+    },
+    {
+      "time": "11:22",
+      "floor": "INVESTMENT_COMMITTEE",
+      "role": "会签记录席",
+      "category": "vote",
+      "severity": "review",
+      "tag": "会签同步",
+      "text": "研究、风险、合规、执行四条结论已汇总至委员会主审屏。"
+    },
+    {
+      "time": "11:48",
+      "floor": "INVESTMENT_COMMITTEE",
+      "role": "投委会主席席",
+      "category": "decision",
+      "severity": "approved",
+      "tag": "终审结论",
+      "text": "有条件通过，要求补充短期波动容忍区间说明后进入执行监控。"
+    },
+    {
+      "time": "12:06",
+      "floor": "REPORTING_ATTRIBUTION",
+      "role": "报表聚合总线",
+      "category": "report_publish",
+      "severity": "info",
+      "tag": "报表发布",
+      "text": "审批链、仓位分布、收益归因、风险摘要和资金流向已聚合上墙。"
+    },
+    {
+      "time": "12:18",
+      "floor": "FINANCE_OPERATIONS",
+      "role": "台账席",
+      "category": "ops_sync",
+      "severity": "info",
+      "tag": "运营待命",
+      "text": "台账、清算和审计留痕模块已挂接，等待成交后更新。"
+    }
+  ],
+  "reports": [
+    {
+      "id": "historical-price-trend",
+      "type": "line",
+      "title": "历史价格走势",
+      "unit": "USD",
+      "floor": "MARKET_SIGNAL_DECK",
+      "source": "synthetic_market",
+      "data": [
+        { "date": "2025-07", "value": 905 },
+        { "date": "2025-08", "value": 948 },
+        { "date": "2025-09", "value": 991 },
+        { "date": "2025-10", "value": 1038 },
+        { "date": "2025-11", "value": 1076 },
+        { "date": "2025-12", "value": 1108 },
+        { "date": "2026-01", "value": 1145 },
+        { "date": "2026-02", "value": 1188 },
+        { "date": "2026-03", "value": 1212 }
+      ]
+    },
+    {
+      "id": "benchmark-comparison",
+      "type": "multi-line",
+      "title": "相对基准收益",
+      "unit": "%",
+      "floor": "MARKET_SIGNAL_DECK",
+      "source": "synthetic_market",
+      "series": [
+        { "name": "AI Theme", "data": [0, 3.2, 6.1, 8.8, 12.4, 15.1] },
+        { "name": "NASDAQ Proxy", "data": [0, 1.1, 2.8, 3.5, 5.6, 7.2] },
+        { "name": "CSI300 Proxy", "data": [0, -0.8, 0.4, 1.0, 1.9, 2.6] }
+      ],
+      "labels": ["T0", "T1", "T2", "T3", "T4", "T5"]
+    },
+    {
+      "id": "turnover-volume",
+      "type": "bar",
+      "title": "成交量与关注度",
+      "unit": "M shares",
+      "floor": "MARKET_SIGNAL_DECK",
+      "source": "synthetic_market",
+      "data": [
+        { "label": "周一", "value": 18 },
+        { "label": "周二", "value": 22 },
+        { "label": "周三", "value": 27 },
+        { "label": "周四", "value": 24 },
+        { "label": "周五", "value": 31 }
+      ]
+    },
+    {
+      "id": "drawdown-window",
+      "type": "area",
+      "title": "回撤窗口",
+      "unit": "%",
+      "floor": "RISK_COMPLIANCE_GRID",
+      "source": "synthetic_risk",
+      "data": [
+        { "label": "M1", "value": -1.2 },
+        { "label": "M2", "value": -2.8 },
+        { "label": "M3", "value": -1.7 },
+        { "label": "M4", "value": -3.6 },
+        { "label": "M5", "value": -2.4 },
+        { "label": "M6", "value": -1.1 }
+      ]
+    },
+    {
+      "id": "capital-flow",
+      "type": "sankey",
+      "title": "资金流向",
+      "floor": "REPORTING_ATTRIBUTION",
+      "source": "synthetic_process",
+      "nodes": ["总资金任务", "主题池", "NVDA", "服务器链", "光模块链", "现金缓冲"],
+      "links": [
+        { "source": "总资金任务", "target": "主题池", "value": 1000 },
+        { "source": "主题池", "target": "NVDA", "value": 450 },
+        { "source": "主题池", "target": "服务器链", "value": 220 },
+        { "source": "主题池", "target": "光模块链", "value": 180 },
+        { "source": "主题池", "target": "现金缓冲", "value": 150 }
+      ]
+    },
+    {
+      "id": "position-allocation",
+      "type": "donut",
+      "title": "仓位分布",
+      "unit": "%",
+      "floor": "REPORTING_ATTRIBUTION",
+      "source": "synthetic_portfolio",
+      "data": [
+        { "label": "NVDA", "value": 4.5 },
+        { "label": "服务器链", "value": 2.2 },
+        { "label": "光模块链", "value": 1.8 },
+        { "label": "其他科技", "value": 18.5 },
+        { "label": "非科技", "value": 68.0 },
+        { "label": "现金", "value": 5.0 }
+      ]
+    },
+    {
+      "id": "sector-exposure",
+      "type": "bar",
+      "title": "行业暴露",
+      "unit": "%",
+      "floor": "RISK_COMPLIANCE_GRID",
+      "source": "synthetic_portfolio",
+      "data": [
+        { "label": "Technology", "value": 27.8 },
+        { "label": "Healthcare", "value": 18.2 },
+        { "label": "Financials", "value": 13.4 },
+        { "label": "Consumer", "value": 16.1 },
+        { "label": "Industrials", "value": 12.6 },
+        { "label": "Cash", "value": 5.0 }
+      ],
+      "limit": 30
+    },
+    {
+      "id": "concentration-ladder",
+      "type": "bar",
+      "title": "集中度梯度",
+      "unit": "%",
+      "floor": "PORTFOLIO_MGMT_BUS",
+      "source": "synthetic_portfolio",
+      "data": [
+        { "label": "Top1", "value": 4.5 },
+        { "label": "Top2", "value": 3.9 },
+        { "label": "Top3", "value": 3.5 },
+        { "label": "Top5 合计", "value": 16.4 },
+        { "label": "Top10 合计", "value": 32.8 }
+      ]
+    },
+    {
+      "id": "cash-buffer",
+      "type": "metric-grid",
+      "title": "现金缓冲",
+      "floor": "REPORTING_ATTRIBUTION",
+      "source": "synthetic_portfolio",
+      "items": [
+        { "label": "当前现金", "value": "5.0%" },
+        { "label": "最低目标", "value": "4.0%" },
+        { "label": "执行后预计", "value": "4.7%" },
+        { "label": "流动性状态", "value": "充足" }
+      ]
+    },
+    {
+      "id": "risk-summary",
+      "type": "metric-grid",
+      "title": "风险摘要",
+      "floor": "RISK_COMPLIANCE_GRID",
+      "source": "synthetic_risk",
+      "items": [
+        { "label": "单仓位上限", "value": "4.5%" },
+        { "label": "科技暴露", "value": "27.8%" },
+        { "label": "VaR 95", "value": "14.2%" },
+        { "label": "风险评级", "value": "中高" }
+      ]
+    },
+    {
+      "id": "approval-chain",
+      "type": "table",
+      "title": "审批链路",
+      "floor": "INVESTMENT_COMMITTEE",
+      "source": "synthetic_process",
+      "columns": ["环节", "负责人", "状态", "备注"],
+      "rows": [
+        ["研究提交", "权益研究负责人", "完成", "主题逻辑与 thesis 已提交"],
+        ["风险审查", "风险分析师", "完成", "要求单仓位不超 4.5%"],
+        ["合规核验", "合规负责人", "完成", "限制名单未命中"],
+        ["执行会签", "交易执行负责人", "完成", "分三笔建仓方案已生成"],
+        ["投委会终审", "首席投资官", "有条件通过", "补充短期波动容忍区间"]
+      ]
+    },
+    {
+      "id": "committee-vote-matrix",
+      "type": "table",
+      "title": "委员会投票矩阵",
+      "floor": "INVESTMENT_COMMITTEE",
+      "source": "synthetic_process",
+      "columns": ["席位", "结论", "关注点", "状态"],
+      "rows": [
+        ["主席席", "同意", "补充波动容忍区间", "通过"],
+        ["风险席", "同意", "维持 4.5% 上限", "通过"],
+        ["研究席", "同意", "主线逻辑完整", "通过"],
+        ["执行席", "同意", "三段执行可落地", "通过"]
+      ]
+    },
+    {
+      "id": "blocker-list",
+      "type": "table",
+      "title": "阻塞项清单",
+      "floor": "INVESTMENT_COMMITTEE",
+      "source": "synthetic_process",
+      "columns": ["阻塞项", "级别", "责任方", "处理状态"],
+      "rows": [
+        ["短期波动容忍区间说明", "中", "首席风控官办公室", "待补充"],
+        ["执行异常暂停阈值复核", "低", "执行规划层", "处理中"],
+        ["投资者摘要语句压缩", "低", "报表归因层", "待同步"]
+      ]
+    },
+    {
+      "id": "compliance-checklist",
+      "type": "table",
+      "title": "合规检查清单",
+      "floor": "RISK_COMPLIANCE_GRID",
+      "source": "synthetic_process",
+      "columns": ["检查项", "结果", "说明"],
+      "rows": [
+        ["限制名单", "通过", "未命中受限标的"],
+        ["信息来源留痕", "通过", "外部引用已记录"],
+        ["审批链完整性", "通过", "节点齐全"],
+        ["仓位限制", "通过", "单仓位 4.5%"],
+        ["行业暴露限制", "通过", "科技暴露 27.8% / 30%"]
+      ]
+    },
+    {
+      "id": "evidence-completeness",
+      "type": "metric-grid",
+      "title": "证据完整度",
+      "floor": "RISK_COMPLIANCE_GRID",
+      "source": "synthetic_process",
+      "items": [
+        { "label": "研究摘要", "value": "已挂接" },
+        { "label": "估值桥", "value": "已挂接" },
+        { "label": "外部引用", "value": "已记录" },
+        { "label": "会签留痕", "value": "完整" }
+      ]
+    },
+    {
+      "id": "execution-plan",
+      "type": "table",
+      "title": "分笔执行计划",
+      "floor": "EXECUTION_PLANNING",
+      "source": "synthetic_process",
+      "columns": ["阶段", "时间窗", "比例", "动作"],
+      "rows": [
+        ["阶段一", "开盘后 30 分钟", "30%", "试探性建仓"],
+        ["阶段二", "午后确认窗口", "40%", "放量后主建仓"],
+        ["阶段三", "收盘前 20 分钟", "30%", "尾盘修正与补齐"]
+      ]
+    },
+    {
+      "id": "liquidity-window",
+      "type": "table",
+      "title": "流动性窗口",
+      "floor": "EXECUTION_PLANNING",
+      "source": "synthetic_process",
+      "columns": ["窗口", "流动性评级", "建议动作", "备注"],
+      "rows": [
+        ["开盘", "中", "轻量试探", "避免追价"],
+        ["午后确认", "高", "主建仓", "重点成交窗口"],
+        ["尾盘", "中高", "修正补齐", "保留弹性"]
+      ]
+    },
+    {
+      "id": "slippage-guardrail",
+      "type": "metric-grid",
+      "title": "滑点护栏",
+      "floor": "EXECUTION_PLANNING",
+      "source": "synthetic_process",
+      "items": [
+        { "label": "单笔冲击阈值", "value": "18 bp" },
+        { "label": "暂停阈值", "value": "32 bp" },
+        { "label": "价格追踪", "value": "启用" },
+        { "label": "异常处理", "value": "自动暂停" }
+      ]
+    },
+    {
+      "id": "attribution-summary",
+      "type": "bar",
+      "title": "收益归因",
+      "unit": "bp",
+      "floor": "REPORTING_ATTRIBUTION",
+      "source": "synthetic_portfolio",
+      "data": [
+        { "label": "主题选择", "value": 62 },
+        { "label": "个股选择", "value": 48 },
+        { "label": "仓位控制", "value": 21 },
+        { "label": "执行节奏", "value": 14 },
+        { "label": "现金拖累", "value": -9 }
+      ]
+    },
+    {
+      "id": "thesis-scorecard",
+      "type": "metric-grid",
+      "title": "研究评分卡",
+      "floor": "RESEARCH_SYNTHESIS",
+      "source": "synthetic_research",
+      "items": [
+        { "label": "主题完整度", "value": "88 / 100" },
+        { "label": "估值可信度", "value": "高" },
+        { "label": "催化剂清晰度", "value": "中高" },
+        { "label": "失效条件", "value": "已定义" }
+      ]
+    },
+    {
+      "id": "valuation-bridge",
+      "type": "table",
+      "title": "估值桥",
+      "floor": "RESEARCH_SYNTHESIS",
+      "source": "synthetic_research",
+      "columns": ["模块", "贡献", "结论", "备注"],
+      "rows": [
+        ["盈利上修", "+120", "正向", "资本开支预期抬升"],
+        ["估值溢价", "+85", "正向", "景气主线强化"],
+        ["拥挤交易", "-40", "负向", "短期波动放大"],
+        ["执行折扣", "-15", "负向", "保守按滑点折让"]
+      ]
+    },
+    {
+      "id": "operations-status",
+      "type": "metric-grid",
+      "title": "运营状态",
+      "floor": "FINANCE_OPERATIONS",
+      "source": "synthetic_process",
+      "items": [
+        { "label": "台账状态", "value": "已准备" },
+        { "label": "清算状态", "value": "待成交后更新" },
+        { "label": "内部同步", "value": "正常" },
+        { "label": "审计留痕", "value": "已挂接" }
+      ]
+    },
+    {
+      "id": "settlement-readiness",
+      "type": "metric-grid",
+      "title": "结算就绪度",
+      "floor": "FINANCE_OPERATIONS",
+      "source": "synthetic_process",
+      "items": [
+        { "label": "券商路由", "value": "已配置" },
+        { "label": "结算参数", "value": "已挂接" },
+        { "label": "对账模板", "value": "已生成" },
+        { "label": "异常升级", "value": "待命" }
+      ]
+    },
+    {
+      "id": "ops-queue-status",
+      "type": "metric-grid",
+      "title": "支持队列",
+      "floor": "WORKFORCE_SUPPORT",
+      "source": "synthetic_process",
+      "items": [
+        { "label": "待处理队列", "value": "2" },
+        { "label": "跨层消息", "value": "正常" },
+        { "label": "调度状态", "value": "平稳" },
+        { "label": "备用人手", "value": "4 席" }
+      ]
+    },
+    {
+      "id": "compute-health",
+      "type": "metric-grid",
+      "title": "算力健康度",
+      "floor": "GENERAL_COMPUTE",
+      "source": "synthetic_process",
+      "items": [
+        { "label": "刷新任务", "value": "正常" },
+        { "label": "计算负载", "value": "54%" },
+        { "label": "报表渲染", "value": "正常" },
+        { "label": "异常告警", "value": "0" }
+      ]
+    },
+    {
+      "id": "task-summary",
+      "type": "metric-grid",
+      "title": "任务总览",
+      "floor": "INIT_LOBBY",
+      "source": "synthetic_process",
+      "items": [
+        { "label": "主题", "value": "AI 算力链增配" },
+        { "label": "主标的", "value": "NVDA" },
+        { "label": "优先级", "value": "高" },
+        { "label": "状态", "value": "终审中" }
+      ]
+    }
+  ]
 }
